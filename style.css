@@ -8,12 +8,32 @@ body {
 .card {
   width: 300px;
   background-color: #bf6aff;
-  border: 1px solid #000000;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
+
+  border: 4px solid;
+  border-image: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  ) 1;
+  animation: borderMove 5s linear infinite;
+  background-clip: padding-box;
 }
+
+@keyframes borderMove {
+  0%   { border-image-source: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet, red); }
+  100% { border-image-source: linear-gradient(450deg, red, orange, yellow, green, cyan, blue, violet, red); }
+}
+
 
 /* ภารกิจที่ 4: จัดสไตล์รูปภาพ <img> */
 .card img {
@@ -39,4 +59,108 @@ body {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+
+.rainbow-animate {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red   
+  );
+  background-size: 400% 100%;
+  animation: rainbowMove 6s linear infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes rainbowMove {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; } 
+}
+
+.rainbow-animate1 {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red   
+  );
+  background-size: 400% 100%;
+  animation: rainbowMove 6s linear infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes rainbowMove {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; } 
+}
+
+.rainbow-animate2 {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red    
+  );
+  background-size: 400% 100%;
+  animation: rainbowMove 6s linear infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes rainbowMove {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; } 
+}
+
+.rainbow-animate3 {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red   
+  );
+  background-size: 400% 100%;
+  animation: rainbowMove 6s linear infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes rainbowMove {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 0%; }
+  100% { background-position: 0% 0%; } 
 }
